@@ -1,4 +1,6 @@
 # Deploy static site to GitHub Pages (no build step)
+# Prerequisite: In repo Settings → Pages, set Source to "GitHub Actions" (one-time).
+# See notes/pages-deploy-diagnosis.md if the workflow fails at "Setup Pages".
 name: Deploy to GitHub Pages
 
 on:
