@@ -33,16 +33,17 @@ Your `.github/workflows/pages.yml` matches GitHub’s “single job, no build”
 
 ## Fix (do this once)
 
-1. Open: **https://github.com/ayush61-netizen/ash-oblivionkey.github.io**
+1. Open: **https://github.com/ayushxm-dev/oblivionkey.github.io**
 2. Click **Settings** (repo top bar).
 3. Left sidebar → **Pages** (under “Code and automation”).
 4. Under **“Build and deployment”**:
-   - **Source** → choose **“GitHub Actions”** (not “Deploy from a branch” or “None”).
-5. No need to create a branch or add a workflow; the existing workflow is fine.
+   - **Source** → choose **“Static HTML”** (Deploy static files without a build) or **“GitHub Actions”** if shown.
+   - Click **Save** if there is a save button, and wait a few seconds.
+5. The workflow now uses `enablement: true` in the Setup Pages step, so it may try to enable Pages automatically. If it still fails, add a **Personal Access Token (PAT)** with **repo** scope as a repository secret named **PAGES_TOKEN** (Settings → Secrets and variables → Actions → New repository secret); then re-run the workflow.
 
 After that, the next run of “Deploy to GitHub Pages” (on push to `main` or from Actions → “Run workflow”) should succeed, and the site will be at:
 
-**https://ayush61-netizen.github.io/ash-oblivionkey.github.io/**
+**https://ayushxm-dev.github.io/oblivionkey.github.io/**
 
 ## If you don’t see “GitHub Actions” as a source
 

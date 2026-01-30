@@ -29,6 +29,10 @@ jobs:
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
+        with:
+          # Try to enable Pages if not yet enabled (needs PAT in PAGES_TOKEN if GITHUB_TOKEN is insufficient)
+          enablement: true
+          token: ${{ secrets.PAGES_TOKEN || github.token }}
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v4
