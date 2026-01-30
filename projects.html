@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Projects | Ayush Meshram</title>
+    <meta name="description" content="Applied cryptography, security tooling, and quantum systems projects.">
+    <meta property="og:title" content="Projects | Ayush Meshram">
+    <meta property="og:description" content="Applied cryptography, security tooling, and quantum systems projects.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://Ash-OblivionKey.github.io/assets/images/Photograph_01.jpeg">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:image" content="https://Ash-OblivionKey.github.io/assets/images/Photograph_01.jpeg">
+    <meta name="twitter:title" content="Projects | Ayush Meshram">
+    <meta name="twitter:description" content="Applied cryptography, security tooling, and quantum systems projects.">
+    <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@400;600;700&family=Manrope:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/styles.css">
+      
+      <noscript>
+      <style>
+        @media (max-width: 960px) {
+          .nav-links {
+            opacity: 1 !important;
+            pointer-events: auto !important;
+            transform: none !important;
+            position: static !important;
+            background: transparent !important;
+            border: none !important;
+            padding: 0 !important;
+          }
+          .nav-toggle {
+            display: none !important;
+          }
+        }
+        .tab-panel {
+          display: block !important;
+        }
+        .tab-header {
+          display: none !important;
+        }
+        .theme-toggle {
+          display: none !important;
+        }
+      </style>
+    </noscript>
+  </head>
+  <body>
+    <div class="bg-orbit" aria-hidden="true"></div>
+    <header class="site-header">
+      <nav class="nav">
+        <a class="brand" href="index.html">Ayush Meshram</a>
+        <div class="nav-actions">
+          <div class="nav-links" id="nav-links">
+            <a href="index.html">Home</a>
+            <a href="index.html#about">About</a>
+            <a href="publications.html">Publications</a>
+            <a href="projects.html" aria-current="page">Projects</a>
+            <a href="experience.html">Experience</a>
+            <a href="awards.html">Extras</a>
+            <a href="contact.html">Contact</a>
+          </div>
+          <button class="theme-toggle" type="button" aria-pressed="false">Dark mode</button>
+          <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links">Menu</button>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="section reveal">
+        <div class="section-header">
+          <p class="section-kicker">Projects</p>
+          <h1 class="page-title">Projects and Prototypes</h1>
+          <p class="lead">Implementations in cryptography and secure timing, tied to my research.</p>
+        </div>
+      </section>
+
+      <section class="section reveal">
+        <div class="group">
+          <h2 class="section-title">Cryptography and Security</h2>
+          <p class="entry-note" style="margin-bottom: 1.5rem;">Major and minor projects below were part of the MSc CS degree; other entries are independent or research projects.</p>
+          <div class="card-grid card-grid--single" id="projects-crypto">
+            <details class="card project-card">
+              <summary class="project-summary">
+                <div class="card-head">
+                  <h4>MSc CS Major Project: PQC-Enabled OAuth/OIDC (Guided at IIT Kanpur; submitted at SRMIST)</h4>
+                  <span class="badge">Completed</span>
+                </div>
+              </summary>
+              <div class="project-body">
+                <p class="project-meta">Part of MSc CS degree. IIT Kanpur (guidance, Dec 2024 - May 2025) | SRMIST major project submission</p>
+                <ul class="list">
+                  <li>Evaluated Falcon, Dilithium, and SPHINCS+ for OAuth/OIDC-style authentication using OpenSSL/liboqs</li>
+                  <li>Benchmarked signature sizes and verification latency for authentication workflows</li>
+                </ul>
+                <p class="tech">Tech: C/C++, OpenSSL, liboqs, OAuth/OIDC</p>
+                <span class="project-link project-link--muted">Available on request</span>
+              </div>
+            </details>
+            <details class="card project-card">
+              <summary class="project-summary">
+                <div class="card-head">
+                  <h4>UMPC: Unlinkable Multi-Party Computation via Session-Specific Pseudonyms</h4>
+                  <span class="badge">Submitted</span>
+                </div>
+              </summary>
+              <div class="project-body">
+                <p class="project-meta">Paper submitted to Communications in Cryptology Vol. 3 Issue 1 (cic2026_1).</p>
+                <p class="entry-note">Unlinkable MPC (UMPC) adds anonymous credentials and session-specific pseudonyms to MPC to prevent cross-session linking. Supports classical (PS/BLS12-381) and post-quantum (ML-DSA) variants. Modular layer, compatible with existing MPC, and scales linearly.</p>
+                <ul class="list">
+                  <li>Anonymous credentials and session-specific pseudonyms; classical (BLS12-381) and post-quantum (ML-DSA) variants</li>
+                  <li>Modular layer, compatible with existing MPC; scales linearly with participant count</li>
+                </ul>
+                <p class="tech">Tech: Go, BLS12-381, ML-DSA, ZK-SNARKs (Groth16)</p>
+                <a class="project-link" href="https://github.com/Ash-OblivionKey/Unlinkable-MPC" target="_blank" rel="noopener">GitHub</a>
+              </div>
+            </details>
+            <details class="card project-card">
+              <summary class="project-summary">
+                <div class="card-head">
+                  <h4>Multivariate Witness-Hiding Adaptor Signatures</h4>
+                  <span class="badge">Submitted</span>
+                </div>
+              </summary>
+              <div class="project-body">
+                <p class="project-meta">Paper submitted to IACR Communications in Cryptology (CiC).</p>
+                <p class="entry-note">Post-quantum adaptor signatures using multivariate cryptography. Enables atomic swaps and scriptless smart contracts with UOV and MAYO signature schemes.</p>
+                <ul class="list">
+                  <li>Multivariate Witness Hiding Adaptor Signatures (MWAS) extending UOV and MAYO with adaptor functionality</li>
+                  <li>Research implementation with unit, integration, and performance tests; Apache-2.0</li>
+                </ul>
+                <p class="tech">Tech: C, liboqs, OpenSSL, UOV, MAYO</p>
+                <a class="project-link" href="https://github.com/Ash-OblivionKey/multivariate-adaptor-signatures" target="_blank" rel="noopener">GitHub</a>
+              </div>
+            </details>
+            <details class="card project-card">
+              <summary class="project-summary">
+                <div class="card-head">
+                  <h4>Post-Quantum Selective Verifiability: Scaling Trust, Not Proofs</h4>
+                  <span class="badge">Submitted</span>
+                </div>
+              </summary>
+              <div class="project-body">
+                <p class="project-meta">Paper submitted to APKC 2026 (13th ACM ASIA Public-Key Cryptography Workshop).</p>
+                <p class="entry-note">Selective verifiability of computation DAGs: the verifier checks only a subset of nodes (vertex cut) instead of the full execution trace. Verified subset intersects every input–output path; nodes in subset proved with STARKs, rest authenticated via chained KMAC256. Subset selection uses entropy-regularised sampling and deterministic patching.</p>
+                <ul class="list">
+                  <li>Proofs: STARK (FRI-based). Commitments: KMAC256, SHAKE256. HE: BFV, CKKS (Ring-LWE)</li>
+                  <li>SHA-3-256, ML-DSA; Freivalds for matrix verification; PatchCut for subset selection</li>
+                </ul>
+                <p class="tech">Tech: Rust, STARK, KMAC256, BFV/CKKS, ML-DSA</p>
+                <a class="project-link" href="https://github.com/Ash-OblivionKey/selective-verifiability" target="_blank" rel="noopener">GitHub</a>
+              </div>
+            </details>
+            <details class="card project-card">
+              <summary class="project-summary">
+                <div class="card-head">
+                  <h4>MSc CS Minor Project: NetVigilance - Port Scanning and Banner Grabbing Tool</h4>
+                  <span class="badge">Completed</span>
+                </div>
+              </summary>
+              <div class="project-body">
+                <p class="project-meta">Part of MSc CS degree. SRM Institute of Science and Technology, Chennai, Tamil Nadu | Jul 2024 - Oct 2024</p>
+                <ul class="list">
+                  <li>Lightweight port scanner supporting IP enumeration, service fingerprinting, and protocol analysis (HTTP/FTP/SSH)</li>
+                </ul>
+                <p class="tech">Tech: Go, Python, Networking</p>
+                <span class="project-link project-link--muted">Available on request</span>
+              </div>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      <section class="section reveal">
+        <div class="group">
+          <h2 class="section-title">Secure Timing and Navigation</h2>
+          <div class="card-grid card-grid--single" id="projects-quantum">
+            <details class="card project-card">
+              <summary class="project-summary">
+                <div class="card-head">
+                  <h4>Underwater Quantum Key Distribution Simulator</h4>
+                  <span class="badge">Active</span>
+                </div>
+              </summary>
+              <div class="project-body">
+                <p class="entry-note">Simulation framework for quantum cryptography protocols in underwater environments using IBM Qiskit for quantum circuit modeling. Simulates QKD through underwater channels with realistic physical effects: photon absorption, scattering, thermal decoherence, and environmental noise.</p>
+                <p class="project-meta">Implemented protocols</p>
+                <ul class="list">
+                  <li><strong>BB84:</strong> Single-photon prepare-and-measure; two measurement bases (rectilinear and diagonal); security from quantum uncertainty</li>
+                  <li><strong>E91:</strong> Entanglement-based QKD using Bell states; CHSH inequality for eavesdropping detection; quantum correlation verification</li>
+                  <li><strong>GG02:</strong> Continuous-variable QKD; Gaussian-modulated coherent states; mutual information and Holevo bound</li>
+                </ul>
+                <p class="tech">Tech: Python 3.7+, NumPy, Matplotlib, Qiskit, Qiskit Aer, pytest, tqdm, PyYAML</p>
+                <a class="project-link" href="https://github.com/Ash-OblivionKey/q-communication" target="_blank" rel="noopener">GitHub</a>
+              </div>
+            </details>
+            <details class="card project-card">
+              <summary class="project-summary">
+                <div class="card-head">
+                  <h4>Underwater Quantum Clock Research System (Toolkit)</h4>
+                  <span class="badge">Completed</span>
+                </div>
+              </summary>
+              <div class="project-body">
+                <p class="entry-note">Simulation platform for analyzing quantum timing systems in harsh underwater environments: clock behavior, environmental adaptation, and adaptive control without hardware deployments.</p>
+                <p class="project-meta">Features</p>
+                <ul class="list">
+                  <li>Multiple clock types: optical lattice, ion trap, Cs fountain, hydrogen maser</li>
+                  <li>Real quantum mechanics: QuTiP-based quantum state evolution</li>
+                  <li>Environmental adaptation: temperature, pressure, humidity, magnetic field compensation</li>
+                  <li>Underwater environment: depth, salinity, turbidity, pH, water current; advanced noise (scattering, salinity, EM, vibration)</li>
+                  <li>Digital twin: real-time sync and predictive modeling; adaptive control (ML-based)</li>
+                  <li>Data export: JSON, CSV, HDF5 with underwater parameter tracking</li>
+                </ul>
+                <p class="project-meta">Experiments</p>
+                <ul class="list">
+                  <li>Thermocline test: temperature drop (0–100 m depth)</li>
+                  <li>Deep ocean test: pressure effects (0–1000 m depth)</li>
+                  <li>Extended duration test: long-term stability</li>
+                </ul>
+                <p class="tech">Tech: Python, NumPy, SciPy, QuTiP, Plotly, Pandas, scikit-learn</p>
+                <a class="project-link" href="https://github.com/Ash-OblivionKey/quantum-clock-toolkit" target="_blank" rel="noopener">GitHub</a>
+              </div>
+            </details>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>Academic portfolio. Minimal and precise.</p>
+    </footer>
+
+
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
+
